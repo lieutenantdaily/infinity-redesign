@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
 	color:#3a393c;
 	font-family: 'Catamaran', sans-serif;
     text-align: left;
-    font-size:34px;
+    font-size:45px;
     font-weight:700;
     margin: 0px 0 0px 0;
     line-height:1.4em;
@@ -2955,10 +2955,34 @@ fieldset > ul > li {
 
 .first-pane {
     /*background: url(../photos/slideshow/9.jpg);*/
-    background: url(../image/state.png);
+    background: url(../image/1.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position: center;
+    /*height: 400px;*/
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /*box-shadow: 0 0 30px 0 rgba(100, 100, 100, 0.5);*/
+    background-color: rgba(100, 100, 100, 0.8);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Safari */
+    transform: rotate(-5deg);
+
+
+}
+
+.fourth-pane {
+    /*background: url(../photos/slideshow/9.jpg);*/
+    background: url(../image/team.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    border-color: #aaa;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 2%;
     /*height: 400px;*/
     margin-top: 30px;
     margin-bottom: 50px;
@@ -2968,24 +2992,9 @@ fieldset > ul > li {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     
-
-
-}
-
-.fourth-pane {
-    /*background: url(../photos/slideshow/9.jpg);*/
-    background: url(../image/state.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-    border-color: #aaa;
-    border-width: 0px;
-    border-style: solid;
-    border-radius: 2%;
-    /*height: 400px;*/
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /*box-shadow: 0 0 30px 0 rgba(100, 100, 100, 0.5);*/
+    -ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Safari */
+    transform: rotate(5deg);
 }
 
 .zero-pane {
@@ -3010,5 +3019,41 @@ fieldset > ul > li {
 .second-pane {
     /*background-color: rgba(100, 100, 100, 0.8);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 40px;*?
+    border-radius: 40px;*/
+}
+
+.label1 {
+    overflow: hidden;
+    background-color: rgba(100, 100, 100, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-width: 100px;
+    min-height: 50px;
+    -ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Safari */
+    transform: rotate(5deg);
+    position: absolute;
+    bottom: -25px;
+    right: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.label2 {
+    overflow: hidden;
+    background-color: rgba(100, 100, 100, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-width: 100px;
+    min-height: 50px;
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Safari */
+    transform: rotate(-5deg);
+    position: absolute;
+    bottom: -25px;
+    left: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }

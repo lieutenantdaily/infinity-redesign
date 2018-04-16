@@ -1434,7 +1434,7 @@ $(document).ready(function () {
     $('.envira-gallery-item').css('box-shadow', '0px 0px 3px 0px rgba(0,0,0,0.5)');
     
     $(".first-pane").css({'height':($(".second-pane").height()-80)});
-    $(".fourth-pane").css({'height':($(".third-pane").height()-100)});
+    $(".fourth-pane").css({'height':($(".third-pane").height()-80)});
     
     //All*****************************************
 
