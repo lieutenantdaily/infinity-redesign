@@ -478,7 +478,7 @@ font-size: 22px;
 
 
 .logo-image {
-  background-image: url('../image/logo@1x.png');
+  background-image: url('../images/logo@1x.png');
   width: 302px;
   height: 96px;
 }
@@ -487,13 +487,13 @@ font-size: 22px;
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .logo-image {
-    background-image: url('../image/logo@2x.png');
+    background-image: url('../images/logo@2x.png');
     background-size: 302px 96px;
   }
 }
 
 .logo-image-dark {
-  background-image: url('../image/logo-light-bw@1x.png');
+  background-image: url('../images/logo-light-bw@1x.png');
   width: 302px;
   height: 96px;
 }
@@ -502,13 +502,13 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .logo-image-dark {
-    background-image: url('../image/logo-light-bw@2x.png');
+    background-image: url('../images/logo-light-bw@2x.png');
     background-size: 302px 96px;
   }
 }
 
 .big-logo-image {
-  background-image: url('../image/big-logo@1x.png');
+  background-image: url('../images/big-logo@1x.png');
   width: 521px;
   height: 201px;
     margin-top: 90px;
@@ -518,14 +518,14 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .big-logo-image {
-    background-image: url('../image/big-logo@2x.png');
+    background-image: url('../images/big-logo@2x.png');
     background-size: 521px 201px;
       margin-top: 90px;
   }
 }
 
 .spacer-center {
-  background-image: url('../image/spacer-center-ggg2@1x.png');
+  background-image: url('../images/spacer-center-ggg2@1x.png');
    
   height: 142px;
 
@@ -535,13 +535,13 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .spacer-center {
-    background-image: url('../image/spacer-center-ggg2@2x.png');
+    background-image: url('../images/spacer-center-ggg2@2x.png');
     background-size: 940px 142px;
   }
 }
 
 .guns-image {
-  background-image: url('../image/gun_wall.jpg');
+  background-image: url('../images/gun_wall.jpg');
    
   height: 235px;
 }
@@ -550,13 +550,13 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .guns-image {
-    background-image: url('../image/gun_wall.jpg');
+    background-image: url('../images/gun_wall.jpg');
     background-size: 940px 235px;
   }
 }
 
 .will-image {
-  background-image: url('../image/will_bio.jpg');
+  background-image: url('../images/will_bio.jpg');
   width: 432px;
   height: 432px;
 }
@@ -565,13 +565,13 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .will-image {
-    background-image: url('../image/will_bio.jpg');
+    background-image: url('../images/will_bio.jpg');
     background-size: 432px 432px;
   }
 }
 
 .before-after {
-  background-image: url('../image/before_after1.jpg');
+  background-image: url('../images/before_after1.jpg');
   width: 432px;
   height: 117px;
 }
@@ -580,13 +580,13 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi){
   .before-after {
-    background-image: url('../image/before_after1.jpg');
+    background-image: url('../images/before_after1.jpg');
     background-size: 432px 117px;
   }
 }
 
 .pawn-image {
-  background-image: url('../image/pawn_image.jpg');
+  background-image: url('../images/pawn_image.jpg');
     background-size:contain;
   width: 432px;
   height: 432px;
@@ -596,13 +596,13 @@ only screen and (min-resolution:120dpi){
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .pawn-image {
-    background-image: url('../image/pawn_image.jpg');
+    background-image: url('../images/pawn_image.jpg');
     background-size: 432px 432px;
   }
 }
 
 .gallery-logo {
-  background-image: url('../image/gallery-logo@1x.png');
+  background-image: url('../images/gallery-logo@1x.png');
   width: 316px;
   height: 122px;
 }
@@ -611,7 +611,7 @@ only screen and (min-resolution:120dpi) {
 only screen and (-o-min-device-pixel-ratio:13/10),
 only screen and (min-resolution:120dpi) {
   .gallery-logo {
-    background-image: url('../image/gallery-logo@2x.png');
+    background-image: url('../images/gallery-logo@2x.png');
     background-size: 316px 122px;
   }
 }
@@ -795,14 +795,14 @@ only screen and (min-resolution:120dpi) {
 	position:absolute;
 	margin-top:0px;
 	z-index: 400;
-	/*margin-left:-1/*8px;*/
+    margin-left:-8px;
 	opacity:1;
 }
 .logo-dark {
 	position:absolute;
 	margin-top:0px;
 	z-index: 400;
-	/*margin-left:-18px;*/
+	margin-left:-8px;
 	opacity:1;
     display: none;
 }
@@ -941,11 +941,13 @@ font-family: 'Catamaran', sans-serif;
 .inner-full{
 	font-size: 20px;
     width:92%;
-    max-width: 960px;
     display:inline-block;
     text-align: left;
     vertical-align: middle;
     color: #aaa;
+    margin-left: 4%;
+    margin-right: 4%;
+    max-width: 940px;
 }
 
 .inner20{
@@ -958,6 +960,7 @@ font-family: 'Catamaran', sans-serif;
     width:46%;
     max-width: 428px;
     min-width: 300px;
+    
     display:inline-block;
     text-align: left;
     vertical-align: top;
@@ -1512,14 +1515,14 @@ div.fademe {
     background:orange;
 }
 
-#slideshow {
+#group1 {
     position:relative;
     height:609px;
      
 	z-index: 301;
 }
 
-#slideshow IMG {
+#group1 IMG {
     position:absolute;
     top:0;
     left:0;
@@ -1527,12 +1530,12 @@ div.fademe {
     opacity:0.0;
 }
 
-#slideshow IMG.active {
+#group1 IMG.active {
     z-index:10;
     opacity:1.0;
 }
 
-#slideshow IMG.last-active {
+#group1 IMG.last-active {
     z-index:9;
 }
 
@@ -2022,30 +2025,30 @@ fieldset > ul > li {
 }
 
 .block-border-section2-inside {
-    background-image:url(../photos/20.jpg);
+    background-image:url(../images/images/photos/20.jpg);
 }
 
 .block-border-section3-inside {
-    background-image:url(../photos/21.jpg);
+    background-image:url(../images/photos/21.jpg);
 }
 
 .block-border-section4-inside {
-    background-image:url(../photos/inset/1.jpg);
+    background-image:url(../images/photos/inset/1.jpg);
 }
 
 .block-border-section5-inside {
-    background-image:url(../photos/23.jpg);
+    background-image:url(../images/photos/23.jpg);
 }
 
 .block-border-section6-inside {
-    background-image:url(../photos/inset/2.jpg);
+    background-image:url(../images/photos/inset/2.jpg);
 }
 
 .block-border-section7-inside {
-    background-image:url(../photos/slideshow/3.jpg);
+    background-image:url(../images/photos/group1/3.jpg);
 }
 .block-border-footer-inside {
-    background-image: url('../image/footer.jpg');
+    background-image: url('../images/footer.jpg');
 
 }
 
@@ -2076,7 +2079,7 @@ fieldset > ul > li {
     
 }
 
-.border-slideshow {
+.border-group1 {
     /*border-bottom:6px solid #5a5a5a;
     box-shadow:0px 0px 3px 0px #3a393c;*/
 }
@@ -2210,32 +2213,32 @@ fieldset > ul > li {
 }
 
 .background-block1 {
-     background:url('../image/picture1@2x.png');
+     background:url('../images/picture1@2x.png');
     height: 100%;
 }
 
 .background-block2 {
-    background:url('../image/picture2@2x.png');
+    background:url('../images/picture2@2x.png');
     height: 100%;
 }
 
 .background-block3 {
-    background:url('../image/picture3@2x.png');
+    background:url('../images/picture3@2x.png');
     height: 100%;
 }
 
 .background-block4 {
-    background:url('../image/picture1@2x.png');
+    background:url('../images/picture1@2x.png');
     height: 100%;
 }
 
 .background-block5 {
-    background:url('../image/picture2@2x.png');
+    background:url('../images/picture2@2x.png');
     height: 100%;
 }
 
 .background-block6 {
-    background:url('../image/picture3@2x.png');
+    background:url('../images/picture3@2x.png');
     height: 100%;
 }
 
@@ -2891,17 +2894,17 @@ fieldset > ul > li {
 }
 
 .test-url1 {
-    background: url(../photos/endorsements/1.jpg);
+    background: url(../images/photos/group2/1.jpg);
     background-position: center;
     background-size: 150%;
 }
 .test-url2 {
-    background: url(../photos/endorsements/5.jpg);
+    background: url(../images/photos/group2/5.jpg);
     background-position: center;
     background-size: 150%;
 }
 .test-url3 {
-    background: url(../photos/endorsements/2.jpg);
+    background: url(../images/photos/group2/2.jpg);
     background-position: center;
     background-size: 150%;
 }
@@ -2954,8 +2957,8 @@ fieldset > ul > li {
 }
 
 .first-pane {
-    /*background: url(../photos/slideshow/9.jpg);*/
-    background: url(../image/1.jpg);
+    /*background: url(../images/photos/group1/9.jpg);*/
+    background: url(../images/5.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -2966,16 +2969,16 @@ fieldset > ul > li {
     background-color: rgba(100, 100, 100, 0.8);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 40px;
-    -ms-transform: rotate(-5deg); /* IE 9 */
-    -webkit-transform: rotate(-5deg); /* Safari */
-    transform: rotate(-5deg);
-
-
+    -ms-transform: rotate(-0deg); /* IE 9 */
+    -webkit-transform: rotate(-0deg); /* Safari */
+    transform: rotate(-0deg);
+    max-height: 466px;
+    opacity:0;
 }
 
 .fourth-pane {
-    /*background: url(../photos/slideshow/9.jpg);*/
-    background: url(../image/team.jpg);
+    /*background: url(../images/photos/group1/9.jpg);*/
+    background: url(../images/team.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -2992,9 +2995,12 @@ fieldset > ul > li {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     
-    -ms-transform: rotate(5deg); /* IE 9 */
-    -webkit-transform: rotate(5deg); /* Safari */
-    transform: rotate(5deg);
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+    max-height: 271px;
+    opacity: 0;
+
 }
 
 .zero-pane {
@@ -3003,7 +3009,7 @@ fieldset > ul > li {
     border-radius: 40px;
     margin-bottom: 60px;
     margin-top: 30px;
-
+    opacity:0;
 
 }
 
@@ -3038,9 +3044,10 @@ fieldset > ul > li {
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    opacity: 0;
 }
 
-.label2 {
+.labelT {
     overflow: hidden;
     background-color: rgba(100, 100, 100, 0.9);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -3056,4 +3063,5 @@ fieldset > ul > li {
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    opacity: 0;
 }

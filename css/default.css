@@ -12,7 +12,7 @@ body {
     margin-top: 10px;
     margin: 0;
     padding: 0;
-    /*background:url('../image/picture1@2x.png');
+    /*background:url('../images/picture1@2x.png');
 	background-attachment:fixed;
 	background-size: cover;*/
     background-color: white;
@@ -695,10 +695,10 @@ a.button {
 }
 #order-db th.sorted,
 #order-db th.sorted.asc {
-    background: url('/images/sortable-asc.png') no-repeat right;
+    background: url('/imagess/sortable-asc.png') no-repeat right;
 }
 #order-db th.sorted.desc {
-    background: url('/images/sortable-desc.png') no-repeat right;
+    background: url('/imagess/sortable-desc.png') no-repeat right;
 }
 #order-db th:first-child,
 #order-db td:first-child {
@@ -1020,7 +1020,7 @@ span#email_warning b {
     border-radius: 0.5px;
 }
 #section-one {
-    /*background: url(../photos/slideshow/5.jpg);
+    /*background: url(../images/photos/group1/5.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1030,7 +1030,7 @@ span#email_warning b {
     overflow: hidden;
 }
 #section-three {
-    /*background: url(../photos/slideshow/2.jpg);
+    /*background: url(../images/photos/group1/2.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1105,7 +1105,7 @@ span#email_warning b {
 #gallery-scroll {
     bottom: 0px;
     position: fixed;
-    /*background: url('../image/fade-white.png');*/
+    /*background: url('../images/fade-white.png');*/
     vertical-align: bottom;
     z-index: 6;
     /*box-shadow:0px 0px 10px 0px #3a393c;*/
@@ -1270,7 +1270,7 @@ background-size: cover;
 }
 #base-pic {
     height: 50px;
-    background-image: url('../image/footer.jpg');
+    background-image: url('../images/footer.jpg');
     background-position: center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -1306,7 +1306,7 @@ background-size: cover;
 }
 #hamburger {
     position: fixed;
-    top: 27px; right: 30px;
+    top: 26px; right: 30px;
     z-index:2000;
     display: none;
 }
@@ -1391,9 +1391,7 @@ background-size: cover;
 #section-two {
     background: #3a393c;
     
-    background: url(../image/greybg.png);
-    background-attachment: fixed;
-    background-size:cover;
+    
 }
 #section-four {
     background: #d9ab4f;
@@ -1404,7 +1402,7 @@ background-size: cover;
 }
 
 #state {
-    background: url(../photos/slideshow/9.jpg);
+    background: url(../images/photos/group1/9.jpg);
     background-position: center;
     background-size: contain;
     height: 420px;
@@ -1419,9 +1417,25 @@ background-size: cover;
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../photos/slideshow/5.jpg);
+    background: url(../images/photos/group1/5.jpg);
     background-attachment:fixed;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+
+#background-section-one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../images/greybg.png);
+    background-attachment: fixed;
+    background-size:cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1434,7 +1448,7 @@ background-size: cover;
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../image/3.JPG);
+    background: url(../images/3.JPG);
     background-attachment:fixed;
     background-position: center;
     -webkit-background-size: cover;
@@ -1451,7 +1465,7 @@ background-size: cover;
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../photos/slideshow/9.jpg);
+    background: url(../images/photos/group1/9.jpg);
     background-attachment:fixed;
     background-position: center;
     -webkit-background-size: cover;
