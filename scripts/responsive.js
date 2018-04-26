@@ -52,6 +52,12 @@ $(document).ready(function () {
 
     //Responsive Actions*****************************************************************************
 
+    
+    
+    
+    
+    
+    
     //MOBILE******************************************************
     function mobile() {
 
@@ -98,19 +104,10 @@ $(document).ready(function () {
 
 
         //Store Info******************************************************
-        /*$('.icon-set-left, .icon-set-right').css('width', '80%');
-        $('.icon-set-left, .icon-set-right').css('margin-left', '0');
-        $('.icon-set-left, .icon-set-right').css('margin-right', '0');
-
-
-
-        $('.testimonial1, .testimonial2').css('min-width', '500px');
-        $('.testimonial2').css('margin-top', '7px');
-
-        if (w < 600) {
-            $('.testimonial1, .testimonial2').css('min-width', '300px');
-            $('.testimonial2').css('margin-top', '15px');
-        }*/
+        $('.info-hours, .info-map').css('width', '80%');
+        $('.info-hours, .info-map').css('margin-left', '1%');
+        $('.info-hours, .info-map').css('margin-right', '1%');
+        $('.info-hours, .info-map').css('max-width', '550px');
         //*****************************************************************
         
         
@@ -212,9 +209,13 @@ $(document).ready(function () {
         
         
         //Store Info******************************************************
-        //$('.testimonial1, .testimonial2').css('min-width', '350px');
-        //$('.testimonial2').css('margin-top', '0px');
-        //****************************************************************
+        $('.info-hours, .info-map').css('width', '46%');
+        $('.info-hours').css('margin-left', '1%');
+        $('.info-hours').css('margin-right', '3%');
+        $('.info-map').css('margin-left', '3%');
+        $('.info-map').css('margin-right', '1%');
+        $('.info-hours, .info-map').css('max-width', '428px');
+        //*****************************************************************
 
         
         
@@ -372,9 +373,12 @@ $(document).ready(function () {
 
     }
     //alert(pathname);
-
+    //console.log('resizing');
+    //console.log(w);
     if (w < 940) {
+        //console.log(w);
         mobile();
+        
 
     } else {
         desktop();
@@ -400,38 +404,7 @@ $(document).ready(function () {
 
     });
 
-    //Testimonials****************************************
-    w = $(window).width();
 
-    if (w < 822) {
-
-        $('.testimonial-left').css('margin-left', '5%');
-        $('.testimonial-right').css('margin-right', '5%');
-
-    } else {
-
-        $('.testimonial-left').css('margin-left', '0');
-        $('.testimonial-right').css('margin-right', '0');
-
-    }
-
-    $(window).on('resize', function () {
-        w = $(window).width();
-
-        if (w < 822) {
-
-            $('.testimonial-left').css('margin-left', '5%');
-            $('.testimonial-right').css('margin-right', '5%');
-
-        } else {
-
-            $('.testimonial-left').css('margin-left', '0');
-            $('.testimonial-right').css('margin-right', '0');
-
-        }
-
-    });
-    //Testimonials****************************************
 
 
 
