@@ -18,9 +18,9 @@ $(document).ready(function () {
     //All*****************************************
     
     $('.logos').css('left', '0');
-    $('.envira-gallery-item').css('border-radius', '2px');
-    $('.envira-gallery-item').css('overflow', 'hidden');
-    $('.envira-gallery-item').css('box-shadow', '0px 0px 3px 0px rgba(0,0,0,0.5)');
+    //$('.envira-gallery-item').css('border-radius', '2px');
+    //$('.envira-gallery-item').css('overflow', 'hidden');
+    //$('.envira-gallery-item').css('box-shadow', '0px 0px 3px 0px rgba(0,0,0,0.5)');
     
     $(".first-pane").css({'height':($(".second-pane").height()-80)});
     $(".fourth-pane").css({'height':($(".third-pane").height()-80)});
@@ -62,6 +62,8 @@ $(document).ready(function () {
         $('#hamburger').fadeIn(0);
         //Logo and Nav******************************************************
 
+        
+        
         //All Sections******************************************************
         $('h1,h2,h3,h4,h5,h6').css('text-align', 'center');
         $('.inner20').css('width', (w * .88) - 30);
@@ -74,7 +76,9 @@ $(document).ready(function () {
         //$('#load-background').css('padding-top', '20%');
         //All Sections******************************************************
 
-        //Section One******************************************************
+        
+        
+        //Meet Us******************************************************
         $('#background-one').css('background-position', '85% 50%');
         
         $('.block1').css('margin-right', '');
@@ -89,14 +93,12 @@ $(document).ready(function () {
         $('#pi1').css('font-size', '40.25px');
         $('#pi2').css('font-size', '63.75px');
         $('#pi2').css('margin-top', '-15px');
-        //Section One******************************************************
+        //*************************************************************
 
-        //Section Two******************************************************
 
-        //Section Two******************************************************
 
-        //Section Three******************************************************
-        $('.icon-set-left, .icon-set-right').css('width', '80%');
+        //Store Info******************************************************
+        /*$('.icon-set-left, .icon-set-right').css('width', '80%');
         $('.icon-set-left, .icon-set-right').css('margin-left', '0');
         $('.icon-set-left, .icon-set-right').css('margin-right', '0');
 
@@ -108,8 +110,11 @@ $(document).ready(function () {
         if (w < 600) {
             $('.testimonial1, .testimonial2').css('min-width', '300px');
             $('.testimonial2').css('margin-top', '15px');
-        }
-        //Section Three******************************************************
+        }*/
+        //*****************************************************************
+        
+        
+        
 
         //Section Four******************************************************
         $('#background-four').css('background-position', '80% 50%');
@@ -184,7 +189,9 @@ $(document).ready(function () {
         //$('#load-background').css('padding-top', '0');
         //All Sections******************************************************
 
-        //Section One******************************************************
+        
+        
+        //Meet Us******************************************************
         $('#background-one').css('background-position', 'center');
         
         $('.block1').css('margin-right', '6%');
@@ -199,17 +206,18 @@ $(document).ready(function () {
         $('#pi1').css('font-size', '55px');
         $('#pi2').css('font-size', '85px');
         $('#pi2').css('margin-top', '-22px');
-        //Section One******************************************************
+        //**************************************************************
         
-        //Section Two******************************************************
-        $('.state-width').css('max-width', '350px');
-        //Section Two******************************************************
 
-        //Section Three******************************************************
-        $('.testimonial1, .testimonial2').css('min-width', '350px');
-        $('.testimonial2').css('margin-top', '0px');
-        //Section Three******************************************************
+        
+        
+        //Store Info******************************************************
+        //$('.testimonial1, .testimonial2').css('min-width', '350px');
+        //$('.testimonial2').css('margin-top', '0px');
+        //****************************************************************
 
+        
+        
         //Section Four******************************************************
         $('#background-four').css('background-position', 'center');
         //Section Four******************************************************

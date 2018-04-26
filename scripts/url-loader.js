@@ -1,3 +1,15 @@
+//Load Sections**********************************************************
+$(function () {
+    $('#info').load('./ajax/info.htm');
+});
+//***********************************************************************
+
+
+
+
+
+
+
 var Ssection0 = "infinity-redesign";
 var Ssection1 = "meet";
 var Ssection2 = "info";
