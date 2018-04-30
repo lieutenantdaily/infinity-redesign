@@ -701,3 +701,193 @@ $(function () {
 
 }); //]]> 
 //*************************************************************************************************
+
+//Fade Dark - logo-background**********************************************************
+$(function () {
+    var divOUT = $('#block1');
+    var scrollTop = $(window).scrollTop();
+    var elementOffset = divOUT.offset().top;
+    var distance = (elementOffset - scrollTop);
+
+
+    if (distance < -5) {
+        //$('.navigation-bg').stop().animate({ backgroundColor: "#3a393c" },0);
+        //$('#logo-background').animate({backgroundColor: 'none repeat scroll 0% 0% rgba(255, 255, 255, 0.92);'});
+        //alert('dark');
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('#user-nav').css({
+            backgroundColor: '#3a393c'
+        })
+        $('.hamburger').css({
+            color: '#3a393c'
+        })
+
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
+
+    } else {
+        //$('.navigation-bg').stop().animate({ backgroundColor: "#000000" },0);
+        //$('#logo-background').animate({backgroundColor: 'none repeat scroll 0% 0% rgba(32, 32, 32, 0.92);'});
+        //alert('light');
+        $('#logo-background-dark').fadeOut(0);
+        $('#logo-background').fadeIn(0);
+        $('#user-nav').css({
+            backgroundColor: 'transparent'
+        })
+        $('.hamburger').css({
+            color: 'white'
+        })
+
+        $('#logo-dark').fadeOut(0);
+        $('#logo').fadeIn(0);
+
+    }
+
+
+    var pathname = $(location).attr('href');
+
+    if ((/infinity-redesign/.test(pathname))) {
+        //alert('contact');
+
+        $('#logo-background').fadeIn(0);
+        $('#logo-background-dark').fadeOut(0);
+        $('#user-nav').css({
+            backgroundColor: '#transparent'
+        })
+        $('.hamburger').css({
+            color: 'white'
+        })
+
+        $('#logo').fadeIn(0);
+        $('#logo-dark').fadeOut(0);
+        //alert('1');
+
+    }
+
+    if ((/meet/.test(pathname))) {
+        //alert('contact');
+
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('#user-nav').css({
+            backgroundColor: '#3a393c'
+        })
+        $('.hamburger').css({
+            color: '#3a393c'
+        })
+
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
+
+
+    }
+
+    if ((/four/.test(pathname))) {
+        //alert('contact');
+
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('#user-nav').css({
+            backgroundColor: '#3a393c'
+        })
+        $('.hamburger').css({
+            color: '#3a393c'
+        })
+
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
+
+
+    }
+
+    if ((/five/.test(pathname))) {
+        //alert('contact');
+
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('#user-nav').css({
+            backgroundColor: '#3a393c'
+        })
+        $('.hamburger').css({
+            color: '#3a393c'
+        })
+
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
+
+
+    }
+
+
+    if ((/contact/.test(pathname))) {
+        //alert('contact');
+
+        $('#logo-background').fadeOut(0);
+        $('#logo-background-dark').fadeIn(0);
+        $('#user-nav').css({
+            backgroundColor: '#3a393c'
+        })
+        $('.hamburger').css({
+            color: '#3a393c'
+        })
+
+        $('#logo').fadeOut(0);
+        $('#logo-dark').fadeIn(0);
+
+
+    }
+
+
+    $(window).on('scroll', function () {
+        scrollTop = $(window).scrollTop();
+        elementOffset = divOUT.offset().top;
+        distance = (elementOffset - scrollTop);
+
+        if (distance < -5) {
+            //$('#main').css('opacity', '.5');
+            //$('#logo-background').stop().animate({ backgroundColor: "rgba(32, 32, 32, 0.92);" },700);
+            //$('#logo-background').css('transition', 'rgba(255, 255, 255, 0.92)');
+            //$('#logo-background').css("background", "rgba(32, 32, 32, 0.92)");
+            $('#logo-background').fadeOut(600);
+            $('#logo-background-dark').fadeIn(600);
+
+            $('#user-nav').css({
+                backgroundColor: '#3a393c'
+            })
+            $('.hamburger').css({
+                color: '#3a393c'
+            })
+
+            $('#logo').fadeOut(600);
+            $('#logo-dark').fadeIn(600);
+            //alert('dark');
+
+        } else {
+            //$('#main').css('opacity', '1');
+            //$('#logo-background').stop().animate({ backgroundColor: "rgba(255, 255, 255, 0.92);" },700);
+            //$('#logo-background').css('transition', 'rgba(32, 32, 32, 0.92)');
+            //$('#logo-background').css("background", "rgba(255, 255, 255, 0.92)");
+            $('#logo-background-dark').fadeOut(600);
+            $('#logo-background').fadeIn(600);
+
+            $('#user-nav').css({
+                backgroundColor: 'transparent'
+            })
+            $('.hamburger').css({
+                color: 'white'
+            })
+
+
+            $('#logo-dark').fadeOut(600);
+            $('#logo').fadeIn(600);
+            //alert('light');
+
+        }
+
+    });
+
+
+
+}); //]]>
+//******************************************************************************

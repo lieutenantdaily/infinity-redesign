@@ -1,3 +1,4 @@
+//Rotation Animation Function****************************************
 $.fn.animateRotate = function (angle, duration, easing, complete) {
     var args = $.speed(duration, easing, complete);
     var step = args.step;
@@ -14,10 +15,59 @@ $.fn.animateRotate = function (angle, duration, easing, complete) {
         }, args);
     });
 };
+//********************************************************************
 
 
 
-//Waypoints**********************************************************
+
+//Load Store Info**********************************************************
+$(function () {
+    $('#info').load('./ajax/info.htm', function() {
+
+        //Trigger Resize *this is because the page loads after the responsive script runs*
+        $(window).trigger('resize'); 
+
+        var infoH = new Waypoint({
+            element: document.getElementById('info-hours'),
+            handler: function() {
+
+            //alert('Basic waypoint triggered');
+
+            $('#info-hours').animateRotate(-5, 1000);  
+
+            $('#info-hours').animate({
+                    opacity: 1,
+                }, {
+                    duration: 600,
+                    queue: false,
+                    complete: function() { 
+
+
+                        $('#labelH').animate({
+                            opacity: 1
+                        }, {
+                            duration: 600,
+                            queue: false
+                        });
+
+
+
+                    }
+                });
+
+                this.destroy();
+
+              },
+                offset: '65%'
+        });
+    }); 
+});
+
+//***********************************************************************
+
+
+
+//Non-Ajax Waypoints**********************************************************
 $(function () {
 
 
@@ -111,10 +161,8 @@ $(function () {
           },
             offset: '65%'
     });
-
-
-
-
+    
+    
 });
 
 //****************************************************************************

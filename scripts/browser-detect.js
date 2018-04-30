@@ -42,19 +42,34 @@ $(document).ready(function () {
 
     var isAndroid = navigator.userAgent.toLowerCase().indexOf("android");
     if (isAndroid > -1) {
-        bgDIVS.css('position', 'fixed');
-        bgDIVS.css('background-attachment', 'local');
-        //$('#base-text').css('position', 'absolute');
-        //$('#base-text').css('bottom', '30px');
-        //$('#base-text').css('font-size', '22px');
-        $('.light-text').css('font-size', '22px');
-        $('#base-text').css('font-size', '22px');
-        $('.light-text').css('color', '#c1c1c1');
-        $('#base-text').css('color', '#c1c1c1');
+//        bgDIVS.css('position', 'absolute');
+//        bgDIVS.css('background-attachment', 'local');
+        
+        //bgDIVS.css('background-attachment', '');
+       // bgDIVS.css('transform', 'translateZ(-1px) scale(1.1)');
+        
+//        $('.light-text').css('font-size', '22px');
+//        $('#base-text').css('font-size', '22px');
+//        $('.light-text').css('color', '#c1c1c1');
+//        $('#base-text').css('color', '#c1c1c1');
+        
+//        $('.background-main').css('display', 'none');
+//        $('.block-border-inside').css('display', 'none');
+        
+//        
+//        $('.bg-fix').css('background', 'none');
+//        $('.bg-fix').css('background-attachment', '');
 
+        
+//        bgDIVS.css('z-index', '-10');
+
+//        $('#section-five').css('display', 'none');
+    
     } else if (/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())) {
 
         if (/edge/.test(navigator.userAgent.toLowerCase())) {
+            
+            $('.background-main').css('display', 'none');
 
         } else {
 
