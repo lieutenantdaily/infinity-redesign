@@ -2053,7 +2053,7 @@ fieldset > ul > li {
 }
 
 .block-border-section7-inside {
-    background-image:url(../images/photos/group1/3.jpg);
+    background-image:url(../images/1.jpg);
 }
 .block-border-footer-inside {
     background-image: url('../images/footer.jpg');
@@ -2909,7 +2909,9 @@ fieldset > ul > li {
     min-width: 350px;
     margin-left: 3%;
     margin-right: 1%;
-    
+    text-align: center;
+    opacity: 0;
+    display: 
 }
 
 .testimonial-right {
@@ -3109,6 +3111,25 @@ fieldset > ul > li {
     opacity: 0;
 }
 
+.labelM {
+    overflow: hidden;
+    display: inline-block;
+    background-color: rgba(100, 100, 100, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-width: 100px;
+    min-height: 50px;
+    max-width: 365px;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    right: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0;
+}
+
 .hours-border {
     width: 100%;
     height: 100%;
@@ -3122,15 +3143,14 @@ fieldset > ul > li {
 }
 
 .map-border {
-    width: 100%;
-    height: 100%;
     background: rgb(58, 57, 60);
     margin: 0%;
     padding: 0%;
     font-family: 'Catamaran', sans-serif;
-    border-radius: 40px;
+    border-radius: 400px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin-top: 46px;
+    overflow: hidden;
 }
 .map-hours-border2 {
     position: absolute;
@@ -3158,8 +3178,7 @@ fieldset > ul > li {
 }
 
 .map-left {
-    width: 200px;
-    height:  500px;
+
 }
 
 .radius-top-left {
@@ -3219,7 +3238,7 @@ fieldset > ul > li {
 }
 
 .bg-5 {
-    background: url(../images/photos/group1/9.jpg);
+    background: url(../images/whitebg.png);
 }
 
 .bg-fix {
@@ -3232,4 +3251,18 @@ fieldset > ul > li {
 
 .remove-border {
     box-shadow: 0 0px 0 rgb(170, 170, 170);
+}
+
+.bg-map {
+    background: url(../images/map-blur.png);
+}
+
+.no-pointer {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.cursor-hand {
+    cursor: pointer;
 }

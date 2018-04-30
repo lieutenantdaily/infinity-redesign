@@ -1556,3 +1556,8 @@ background-size: cover;
     font-size: 45px;
     font-weight: 700;
 }
+
+#map-link {
+    height: 100%;
+    width: 100%;
+}

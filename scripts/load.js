@@ -60,6 +60,41 @@ $(function () {
               },
                 offset: '65%'
         });
+        
+        var infoH = new Waypoint({
+            element: document.getElementById('info-map'),
+            handler: function() {
+
+            //alert('Basic waypoint triggered');
+
+            $('#info-map').animateRotate(0, 1000);  
+
+            $('#info-map').animate({
+                    opacity: 1,
+                }, {
+                    duration: 600,
+                    queue: false,
+                    complete: function() { 
+
+
+                        $('#labelM').animate({
+                            opacity: 1
+                        }, {
+                            duration: 600,
+                            queue: false
+                        });
+
+
+
+                    }
+                });
+
+                this.destroy();
+
+              },
+                offset: '65%'
+        });
+        
     }); 
 });
 

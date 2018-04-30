@@ -70,6 +70,7 @@ $(document).ready(function () {
         if (/edge/.test(navigator.userAgent.toLowerCase())) {
             
             $('.background-main').css('display', 'none');
+            $('.bg-f').css('display', 'none');
 
         } else {
 

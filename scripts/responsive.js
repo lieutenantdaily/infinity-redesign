@@ -108,8 +108,7 @@ $(document).ready(function () {
         $('.info-hours, .info-map').css('margin-left', '1%');
         $('.info-hours, .info-map').css('margin-right', '1%');
         $('.info-hours, .info-map').css('max-width', '550px');
-        $("#info2").css({'height':($("#info1").height())});
-        $("#info2").css({'width':($("#info1").width())});
+        $("#info2").css({'height':($("#info2").width())});
         //*****************************************************************
         
         
@@ -217,8 +216,7 @@ $(document).ready(function () {
         $('.info-map').css('margin-left', '3%');
         $('.info-map').css('margin-right', '1%');
         $('.info-hours, .info-map').css('max-width', '428px');
-        $("#info2").css({'height':($("#info1").height())});
-        $("#info2").css({'width':($("#info1").width())});
+        $("#info2").css({'height':($("#info2").width())});
         //*****************************************************************
 
         
