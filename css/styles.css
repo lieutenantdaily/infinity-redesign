@@ -3114,14 +3114,14 @@ fieldset > ul > li {
 .labelM {
     overflow: hidden;
     display: inline-block;
-    background-color: rgba(100, 100, 100, 0.9);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     min-width: 100px;
     min-height: 50px;
     max-width: 365px;
     position: absolute;
-    top: -10px;
+    top: 30px;
     left: 50px;
     right: 50px;
     padding: 10px;
@@ -3143,14 +3143,14 @@ fieldset > ul > li {
 }
 
 .map-border {
-    background: rgb(58, 57, 60);
+    /*background: rgb(58, 57, 60);
     margin: 0%;
     padding: 0%;
     font-family: 'Catamaran', sans-serif;
     border-radius: 400px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin-top: 46px;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 .map-hours-border2 {
     position: absolute;
@@ -3265,4 +3265,17 @@ fieldset > ul > li {
 
 .cursor-hand {
     cursor: pointer;
+}
+
+.iframe-bg {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
