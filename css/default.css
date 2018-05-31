@@ -1561,3 +1561,32 @@ background-size: cover;
     height: 100%;
     width: 100%;
 }
+#coupon {
+    opacity: .01;
+    text-align: center;
+}
+
+#schools {
+    margin: 50px;
+}
+
+#school-fade {
+    opacity: 0.01;
+}
+
+#school-links {
+    text-align: center;
+    margin-left: 6%;
+    margin-right: 6%;
+    opacity: 0.01;
+}
+
+#school-links-shrink {
+    text-align: center;
+    display: inline-block;
+    max-width: 870px;
+}
+
+#school-linkset-2 {
+    display: none;
+}

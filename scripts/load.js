@@ -101,6 +101,98 @@ $(function () {
 //***********************************************************************
 
 
+//Load Coupon**********************************************************
+$(function () {
+    $('#coupon').load('./ajax/coupon.htm', function() {
+
+        //Trigger Resize *this is because the page loads after the responsive script runs*
+        $(window).trigger('resize'); 
+
+        var couponContent = new Waypoint({
+            element: document.getElementById('coupon-content'),
+            handler: function() {
+
+            $('#coupon').animate({
+                    opacity: 1,
+                }, {
+                    duration: 600,
+                    queue: false
+                });
+
+                this.destroy();
+
+              },
+                offset: '65%'
+        });
+        
+
+        
+    }); 
+});
+
+//***********************************************************************
+
+
+//Load Schools**********************************************************
+$(function () {
+    $('#schools').load('./ajax/uah.htm', function() {
+
+        //Trigger Resize *this is because the page loads after the responsive script runs*
+        $(window).trigger('resize'); 
+
+        var couponContent = new Waypoint({
+            element: document.getElementById('school-links'),
+            handler: function() {
+
+                $('#school-fade, #school-links').animate({
+                    opacity: 1,
+                }, {
+                    duration: 600,
+                    queue: false
+                });
+
+                this.destroy();
+
+              },
+                offset: '65%'
+        });
+        
+
+        
+    }); 
+    
+    //animate drop-down
+    
+    var dropHeight = $('.mobile-shrink').height();
+    $('.mobile-shrink').css('height', '0');
+    
+    $('.select-link').on("click",function () {
+        $("#mobile-select-link").removeClass("").addClass("selected clickable");
+        $('.mobile-shrink').animate({
+            height: dropHeight,
+            }, {
+                duration: 600,
+                queue: false
+            });
+    });
+    
+    $('.m-link, .clickable').on("click",function () {
+        $("#mobile-select-link").removeClass("selected clickable").addClass("");
+        $('.mobile-shrink').animate({
+            height: 0,
+            }, {
+                duration: 600,
+                queue: false
+            });
+    });
+    
+                    
+    
+});
+
+//***********************************************************************
+
+
 
 //Non-Ajax Waypoints**********************************************************
 $(function () {

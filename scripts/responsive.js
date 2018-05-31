@@ -109,30 +109,36 @@ $(document).ready(function () {
         $('.info-hours, .info-map').css('margin-right', '1%');
         $('.info-hours, .info-map').css('max-width', '550px');
         $("#info2").css({'height':($("#info2").width())});
+        $('.labelM').css('margin-top', '175px');
+        $('.iframe-bgM').fadeIn();
+        $('.iframe-bg').fadeOut();
         //*****************************************************************
-        
-        
+   
         
 
-        //Section Four******************************************************
+        //Coupon******************************************************
         $('#background-four').css('background-position', '80% 50%');
-        //Section Four******************************************************
+        //******************************************************
 
-        //Section Five******************************************************
+        //Schools******************************************************
         $('.table-padding').css('font-size', '20px');
         $('.list-icon-left, .list-icon-right').css('font-size', '28px');
         $('.list-text-left, .list-text-right').css('font-size', '28px');
+        $('#school-linkset-2').fadeIn();
+        $('#school-linkset-1').fadeOut();
 
         if (w < 600) {
+            $('.letter-head').css('font-size', '35px');
             $('.list-icon-left, .list-icon-right').css('font-size', '18px');
             $('.list-text-left, .list-text-right').css('font-size', '20px');
 
             if (w < 410) {
+                $('.letter-head').css('font-size', '30px');
                 $('.list-icon-left, .list-icon-right').css('font-size', '16px');
                 $('.list-text-left, .list-text-right').css('font-size', '18px');
             }
         }
-        //Section Five******************************************************
+        //******************************************************
 
         //Contact******************************************************
         $('#picturefinal').fadeOut(0);
@@ -174,7 +180,8 @@ $(document).ready(function () {
 
         //All Sections******************************************************
         $('h1,h2,h3,h4,h5,h6').css('text-align', 'left');
-        $('.inner20').css('width', '46%');
+        //$('.inner20').css('width', '46%');
+        $('.inner20').css('width', (w * .88) - 30);
         $('.inner21, .inner22').css('width', '46%');
         $('.inner21').css('margin-left', '1%');
         $('.inner21').css('margin-right', '3%');
@@ -217,19 +224,25 @@ $(document).ready(function () {
         $('.info-map').css('margin-right', '1%');
         $('.info-hours, .info-map').css('max-width', '428px');
         $("#info2").css({'height':($("#info2").width())});
+        $('.labelM').css('margin-top', '');
+        $('.iframe-bg').fadeIn();
+        $('.iframe-bgM').fadeOut();
         //*****************************************************************
 
         
         
-        //Section Four******************************************************
+        //Coupon******************************************************
         $('#background-four').css('background-position', 'center');
-        //Section Four******************************************************
+        //******************************************************
 
-        //Section Five******************************************************
+        //Schools******************************************************
+        $('.letter-head').css('font-size', '42px');
         $('.table-padding').css('font-size', '20px');
         $('.list-icon-left, .list-icon-right').css('font-size', '18px');
         $('.list-text-left, .list-text-right').css('font-size', '20px');
-        //Section Five******************************************************
+        $('#school-linkset-1').fadeIn();
+        $('#school-linkset-2').fadeOut();
+        //******************************************************
 
         //Contact******************************************************
         $('#picturefinal').fadeIn(0);
