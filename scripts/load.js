@@ -144,7 +144,7 @@ $(function () {
             element: document.getElementById('school-links'),
             handler: function() {
 
-                $('#school-fade, #school-links').animate({
+                $('#school-fade, #school-links, #school-linksM').animate({
                     opacity: 1,
                 }, {
                     duration: 600,
@@ -164,27 +164,84 @@ $(function () {
     //animate drop-down
     
     var dropHeight = $('.mobile-shrink').height();
+    var menuDropped = 0;
     $('.mobile-shrink').css('height', '0');
     
-    $('.select-link').on("click",function () {
-        $("#mobile-select-link").removeClass("").addClass("selected clickable");
-        $('.mobile-shrink').animate({
-            height: dropHeight,
-            }, {
-                duration: 600,
-                queue: false
+    
+    $('.m-link, .select-link').on("click",function () {
+        
+        if (menuDropped == 0) {
+
+            $("#mobile-select-link").removeClass("").addClass("selected");
+            menuDropped = 1;
+            $('.mobile-shrink').animate({
+                height: 600,
+                }, {
+                    duration: 600,
+                    queue: false
             });
+
+
+
+        } else  {
+
+            $("#mobile-select-link").removeClass("selected").addClass("");
+            menuDropped = 0;
+            $('.mobile-shrink').animate({
+                height: 0,
+                }, {
+                    duration: 600,
+                    queue: false
+            });
+
+
+        }
+        
     });
     
-    $('.m-link, .clickable').on("click",function () {
-        $("#mobile-select-link").removeClass("selected clickable").addClass("");
-        $('.mobile-shrink').animate({
-            height: 0,
-            }, {
-                duration: 600,
-                queue: false
-            });
+    $('.select-link').on("click",function () {
+        
+        $(".select-link").removeClass("selected").addClass("");
+        $(".select-link").text('select school');
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        
     });
+    
+    $('.school-link').on("click",function () {
+        
+        $(".m-link").fadeIn();
+        
+        
+    });
+    
+    $('.uah-link').click(function () {
+        
+        $("#schools").load("./ajax/uah.htm");        
+        $(".select-link").text($(".uah-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".uah-link").removeClass("").addClass("selected");
+        $(".m-link-uah").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        
+    });
+
+    $('.calhoun-link').click(function () {
+        
+        $("#schools").load('./ajax/calhoun.htm');
+        $(".select-link").text($(".calhoun-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".calhoun-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        
+        
+    });
+    
     
                     
     

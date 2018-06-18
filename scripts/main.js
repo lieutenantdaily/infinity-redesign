@@ -646,7 +646,7 @@ $(function () {
 
     }
 
-    if ((/four/.test(pathname))) {
+    if ((/info/.test(pathname))) {
         //alert('contact');
 
         $('#logo-background').fadeOut(0);
@@ -664,7 +664,7 @@ $(function () {
 
     }
 
-    if ((/five/.test(pathname))) {
+    if ((/schools/.test(pathname))) {
         //alert('contact');
 
         $('#logo-background').fadeOut(0);
@@ -683,7 +683,7 @@ $(function () {
     }
 
 
-    if ((/contact/.test(pathname))) {
+    if ((/faq/.test(pathname))) {
         //alert('contact');
 
         $('#logo-background').fadeOut(0);

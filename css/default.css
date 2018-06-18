@@ -1581,6 +1581,13 @@ background-size: cover;
     opacity: 0.01;
 }
 
+#school-linksM {
+    text-align: center;
+    margin-left: 6%;
+    margin-right: 6%;
+    opacity: 0.01;
+}
+
 #school-links-shrink {
     text-align: center;
     display: inline-block;
