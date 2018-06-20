@@ -26,7 +26,8 @@ $(function () {
 
         //Trigger Resize *this is because the page loads after the responsive script runs*
         $(window).trigger('resize'); 
-
+        
+        
         var infoH = new Waypoint({
             element: document.getElementById('info-hours'),
             handler: function() {
@@ -161,6 +162,7 @@ $(function () {
         
     }); 
     
+    
     //animate drop-down
     
     var dropHeight = $('.mobile-shrink').height();
@@ -217,7 +219,12 @@ $(function () {
     
     $('.uah-link').click(function () {
         
-        $("#schools").load("./ajax/uah.htm");        
+        $("#schools").load("ajax/uah.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        });      
+        
         $(".select-link").text($(".uah-link").html());
         $(".school-link").removeClass("selected").addClass("");
         $(".uah-link").removeClass("").addClass("selected");
@@ -225,12 +232,17 @@ $(function () {
         $(".select-link").removeClass("").addClass("selected");
         $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
         
-        
     });
+    
 
     $('.calhoun-link').click(function () {
         
-        $("#schools").load('./ajax/calhoun.htm');
+        $("#schools").load("ajax/calhoun.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
         $(".select-link").text($(".calhoun-link").html());
         $(".school-link").removeClass("selected").addClass("");
         $(".calhoun-link").removeClass("").addClass("selected");
@@ -238,10 +250,7 @@ $(function () {
         $(".select-link").removeClass("").addClass("selected");
         $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
         
-        
-        
     });
-    
     
                     
     

@@ -6,8 +6,9 @@ $(document).ready(function () {
     var bgDIVS = $('.block-border-inside, #background-one, #background-section-one, #background-three, #background-four');
 
     if (isiPhone > -1) {
-        //document.getElementById("viewport").setAttribute("content", "maximum-scale=0.3");
-        //document.getElementById("viewport").setAttribute("content", "initial-scale=0.3");
+        document.getElementById("viewport").setAttribute("content", "maximum-scale=0.9");
+        document.getElementById("viewport").setAttribute("content", "initial-scale=0.9");
+        
         bgDIVS.css('position', 'fixed');
         bgDIVS.css('background-attachment', 'local');
         //$('#base-text').css('position', 'absolute');

@@ -3123,7 +3123,7 @@ fieldset > ul > li {
     min-width: 100px;
     min-height: 50px;
     max-width: 365px;
-    margin-bottom: 280px;
+    /*margin-bottom: 280px;*/
     right: 50px;
     padding: 10px;
     padding-left: 15px;
