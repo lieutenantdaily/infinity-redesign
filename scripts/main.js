@@ -580,10 +580,10 @@ $(function () {
         $('#logo-background-dark').fadeIn(0);
         $('#user-nav').css({
             backgroundColor: '#3a393c'
-        })
+        });
         $('.hamburger').css({
             color: '#3a393c'
-        })
+        });
 
         $('#logo').fadeOut(0);
         $('#logo-dark').fadeIn(0);
@@ -596,10 +596,10 @@ $(function () {
         $('#logo-background').fadeIn(0);
         $('#user-nav').css({
             backgroundColor: 'transparent'
-        })
+        });
         $('.hamburger').css({
             color: 'white'
-        })
+        });
 
         $('#logo-dark').fadeOut(0);
         $('#logo').fadeIn(0);
@@ -616,10 +616,10 @@ $(function () {
         $('#logo-background-dark').fadeOut(0);
         $('#user-nav').css({
             backgroundColor: '#transparent'
-        })
+        });
         $('.hamburger').css({
             color: 'white'
-        })
+        });
 
         $('#logo').fadeIn(0);
         $('#logo-dark').fadeOut(0);
@@ -634,10 +634,10 @@ $(function () {
         $('#logo-background-dark').fadeIn(0);
         $('#user-nav').css({
             backgroundColor: '#3a393c'
-        })
+        });
         $('.hamburger').css({
             color: '#3a393c'
-        })
+        });
 
         $('#logo').fadeOut(0);
         $('#logo-dark').fadeIn(0);
@@ -652,10 +652,10 @@ $(function () {
         $('#logo-background-dark').fadeIn(0);
         $('#user-nav').css({
             backgroundColor: '#3a393c'
-        })
+        });
         $('.hamburger').css({
             color: '#3a393c'
-        })
+        });
 
         $('#logo').fadeOut(0);
         $('#logo-dark').fadeIn(0);
@@ -670,10 +670,10 @@ $(function () {
         $('#logo-background-dark').fadeIn(0);
         $('#user-nav').css({
             backgroundColor: '#3a393c'
-        })
+        });
         $('.hamburger').css({
             color: '#3a393c'
-        })
+        });
 
         $('#logo').fadeOut(0);
         $('#logo-dark').fadeIn(0);
@@ -689,10 +689,10 @@ $(function () {
         $('#logo-background-dark').fadeIn(0);
         $('#user-nav').css({
             backgroundColor: '#3a393c'
-        })
+        });
         $('.hamburger').css({
             color: '#3a393c'
-        })
+        });
 
         $('#logo').fadeOut(0);
         $('#logo-dark').fadeIn(0);
@@ -735,10 +735,10 @@ $(function () {
 
             $('#user-nav').css({
                 backgroundColor: 'transparent'
-            })
+            });
             $('.hamburger').css({
                 color: 'white'
-            })
+            });
 
 
             $('#logo-dark').fadeOut(600);

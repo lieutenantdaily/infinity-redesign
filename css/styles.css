@@ -3240,6 +3240,7 @@ fieldset > ul > li {
 
 .bg-5 {
     background: url(../images/photos/schools/uah.jpg);
+
 }
 
 .bg-fix {
@@ -3343,5 +3344,9 @@ fieldset > ul > li {
 }
 
 .select-link {
+    font-size: 20px;
+}
 
+.m-link {
+    font-size: 20px;
 }

@@ -136,6 +136,9 @@ $(function () {
 
 //Load Schools**********************************************************
 $(function () {
+    
+    var pathname = window.location.pathname;
+    
     $('#schools').load('./ajax/uah.htm', function() {
 
         //Trigger Resize *this is because the page loads after the responsive script runs*
@@ -219,11 +222,16 @@ $(function () {
     
     $('.uah-link').click(function () {
         
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+                
         $("#schools").load("ajax/uah.htm", function(){
             
             $(window).trigger('resize'); 
             
-        });      
+        });
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/uah.jpg)');
         
         $(".select-link").text($(".uah-link").html());
         $(".school-link").removeClass("selected").addClass("");
@@ -232,10 +240,15 @@ $(function () {
         $(".select-link").removeClass("").addClass("selected");
         $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
         
+        window.history.pushState("","",pathname2);
+        
     });
     
 
     $('.calhoun-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
         
         $("#schools").load("ajax/calhoun.htm", function(){
             
@@ -243,6 +256,11 @@ $(function () {
             
         }); 
         
+        $('.bg-5').css('background-image', 'url(images/photos/schools/calhoun.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
         $(".select-link").text($(".calhoun-link").html());
         $(".school-link").removeClass("selected").addClass("");
         $(".calhoun-link").removeClass("").addClass("selected");
@@ -250,8 +268,171 @@ $(function () {
         $(".select-link").removeClass("").addClass("selected");
         $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
         
+        window.history.pushState("","",pathname2);
+        
     });
     
+    $('.faulkner-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#schools").load("ajax/faulkner.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/faulkner.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
+        $(".select-link").text($(".faulkner-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".faulkner-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.virginia-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#schools").load("ajax/virginia.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/virginia.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
+        $(".select-link").text($(".virginia-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".virginia-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.drake-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#schools").load("ajax/drake.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/drake.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
+        $(".select-link").text($(".drake-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".drake-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.oakwood-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#schools").load("ajax/oakwood.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/oakwood.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
+        $(".select-link").text($(".oakwood-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".oakwood-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.anm-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#schools").load("ajax/anm.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/anm.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
+        $(".select-link").text("Alabama A&M");
+        $(".school-link").removeClass("selected").addClass("");
+        $(".anm-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.other-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#schools").load("ajax/other.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        $('.bg-5').css('background-image', 'url(images/photos/schools/other.jpg)');
+        
+        
+        
+        $(".school-5").fadeOut();
+        $(".select-link").text($(".other-link").html());
+        $(".school-link").removeClass("selected").addClass("");
+        $(".other-link").removeClass("").addClass("selected");
+        $(".m-link-calhoun").fadeOut();
+        $(".select-link").removeClass("").addClass("selected");
+        $(".select-link").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
                     
     
 });

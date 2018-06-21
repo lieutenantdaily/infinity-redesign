@@ -119,10 +119,11 @@ $(document).ready(function () {
         
 
         //Coupon******************************************************
-        $('#background-four').css('background-position', '80% 50%');
+        
         //******************************************************
 
         //Schools******************************************************
+        $('#background-four').css('background-position', 'center');
         $('.table-padding').css('font-size', '20px');
         $('.list-icon-left, .list-icon-right').css('font-size', '28px');
         $('.list-text-left, .list-text-right').css('font-size', '28px');
@@ -236,10 +237,11 @@ $(document).ready(function () {
         
         
         //Coupon******************************************************
-        $('#background-four').css('background-position', 'center');
+        
         //******************************************************
 
         //Schools******************************************************
+        $('#background-four').css('background-position', 'center');
         $('.letter-head').css('font-size', '42px');
         $('.table-padding').css('font-size', '20px');
         $('.list-icon-left, .list-icon-right').css('font-size', '18px');
