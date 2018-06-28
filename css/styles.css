@@ -2268,6 +2268,11 @@ fieldset > ul > li {
     margin-left: 0px;
     
 }
+
+.block-box-section-six {
+    margin-left: 0px;
+    
+}
 .block-box-facebook {
     position:absolute;
     margin-left: 7%;
@@ -3243,6 +3248,11 @@ fieldset > ul > li {
 
 }
 
+.bg-6 {
+    background: url(../images/photos/schools/uah.jpg);
+
+}
+
 .bg-fix {
     background-attachment: fixed;
     background-position: center;
@@ -3329,6 +3339,23 @@ fieldset > ul > li {
     border-radius: 10px;
 }
 
+.faq-link {
+    color: #fff;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 24.2px;
+    overflow: hidden;
+    background-color: rgb(58, 57, 60);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 10px;
+}
+
 .selected {
     background: rgb(170, 170, 170);
     color: #3a393c;
@@ -3347,6 +3374,14 @@ fieldset > ul > li {
     font-size: 20px;
 }
 
+.select-linkF {
+    font-size: 20px;
+}
+
 .m-link {
+    font-size: 20px;
+}
+
+.m-linkF {
     font-size: 20px;
 }

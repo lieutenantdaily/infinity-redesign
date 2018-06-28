@@ -231,7 +231,7 @@ $(function () {
             
         });
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/uah.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/uah.jpg)');
         
         $(".select-link").text($(".uah-link").html());
         $(".school-link").removeClass("selected").addClass("");
@@ -256,7 +256,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/calhoun.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/calhoun.jpg)');
         
         
         
@@ -283,7 +283,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/faulkner.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'/images/photos/schools/faulkner.jpg)');
         
         
         
@@ -310,7 +310,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/virginia.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/virginia.jpg)');
         
         
         
@@ -337,7 +337,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/drake.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/drake.jpg)');
         
         
         
@@ -364,7 +364,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/oakwood.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/oakwood.jpg)');
         
         
         
@@ -391,7 +391,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/anm.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/anm.jpg)');
         
         
         
@@ -418,7 +418,7 @@ $(function () {
             
         }); 
         
-        $('.bg-5').css('background-image', 'url(images/photos/schools/other.jpg)');
+        $('.bg-5').css('background-image', 'url('+ pathname +'images/photos/schools/other.jpg)');
         
         
         

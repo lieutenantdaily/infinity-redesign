@@ -142,6 +142,12 @@ $(document).ready(function () {
             }
         }
         //******************************************************
+        
+        //faq******************************************************
+        $('#background-five').css('background-position', 'center');
+        $('#faq-linkset-2').fadeIn();
+        $('#faq-linkset-1').fadeOut();
+        //******************************************************
 
         //Contact******************************************************
         $('#picturefinal').fadeOut(0);
@@ -248,6 +254,12 @@ $(document).ready(function () {
         $('.list-text-left, .list-text-right').css('font-size', '20px');
         $('#school-linkset-1').fadeIn();
         $('#school-linkset-2').fadeOut();
+        //******************************************************
+        
+        //faq******************************************************
+        $('#background-five').css('background-position', 'center');
+        $('#faq-linkset-1').fadeIn();
+        $('#faq-linkset-2').fadeOut();
         //******************************************************
 
         //Contact******************************************************
