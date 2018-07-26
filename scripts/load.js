@@ -440,6 +440,203 @@ $(function () {
 //***********************************************************************
 
 
+//Load FAQ**********************************************************
+$(function () {
+    
+    var pathname = window.location.pathname;
+    
+    $('#faq').load('./ajax/faq.htm', function() {
+
+        //Trigger Resize *this is because the page loads after the responsive script runs*
+        $(window).trigger('resize'); 
+
+        var couponContent = new Waypoint({
+            element: document.getElementById('section-six'),
+            handler: function() {
+
+                $('#faq-fade, #faq-links, #faq-linksM').animate({
+                    opacity: 1,
+                }, {
+                    duration: 600,
+                    queue: false
+                });
+
+                this.destroy();
+
+              },
+                offset: '130%'
+        });
+        
+
+        
+    }); 
+    
+    
+    //animate drop-down
+    
+    var dropHeight = $('.mobile-shrink').height();
+    var menuDropped = 0;
+    $('.mobile-shrink').css('height', '0');
+    
+    
+    $('.m-linkF, .select-linkF').on("click",function () {
+        
+        if (menuDropped == 0) {
+
+            $("#mobile-select-linkF").removeClass("").addClass("selected");
+            menuDropped = 1;
+            $('.mobile-shrinkF').animate({
+                height: 265,
+                }, {
+                    duration: 600,
+                    queue: false
+            });
+
+
+
+        } else  {
+
+            $("#mobile-select-linkF").removeClass("selected").addClass("");
+            menuDropped = 0;
+            $('.mobile-shrinkF').animate({
+                height: 0,
+                }, {
+                    duration: 600,
+                    queue: false
+            });
+
+
+        }
+        
+    });
+    
+    $('.select-linkF').on("click",function () {
+        
+        $(".select-linkF").removeClass("selected").addClass("");
+        $(".select-linkF").text('select');
+        $(".select-linkF").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        
+    });
+    
+    $('.faq-link').on("click",function () {
+        
+        $(".m-linkF").fadeIn();
+        
+        
+    });
+    
+    $('.general-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+                
+        $("#faq").load("ajax/faq.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        });
+        
+        //$('.bg-6').css('background-image', 'url('+ pathname +'images/photos/schools/uah.jpg)');
+        
+        $(".select-linkF").text($(".general-link").html());
+        $(".faq-link").removeClass("selected").addClass("");
+        $(".general-link").removeClass("").addClass("selected");
+        $(".m-link-general").fadeOut();
+        $(".select-linkF").removeClass("").addClass("selected");
+        $(".select-linkF").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+
+    $('.buybacks-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#faq").load("ajax/faq_buyback.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        //$('.bg-6').css('background-image', 'url('+ pathname +'images/photos/schools/calhoun.jpg)');
+        
+        
+        $(".select-linkF").text($(".buybacks-link").html());
+        $(".faq-link").removeClass("selected").addClass("");
+        $(".buybacks-link").removeClass("").addClass("selected");
+        $(".m-link-buybacks").fadeOut();
+        $(".select-linkF").removeClass("").addClass("selected");
+        $(".select-linkF").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.rentals-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#faq").load("ajax/faq_rentals.htm", function(){
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        //$('.bg-6').css('background-image', 'url('+ pathname +'images/photos/schools/calhoun.jpg)');
+        
+        
+        
+        $(".select-linkF").text($(".rentals-link").html());
+        $(".faq-link").removeClass("selected").addClass("");
+        $(".rentals-link").removeClass("").addClass("selected");
+        $(".m-link-rentals").fadeOut();
+        $(".select-linkF").removeClass("").addClass("selected");
+        $(".select-linkF").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    $('.returns-link').click(function () {
+        
+        var pathname2 = window.location.pathname;
+        window.history.pushState("","",pathname);
+        
+        $("#faq").load("ajax/faq_returns.htm", function(){
+
+            
+            $(window).trigger('resize'); 
+            
+        }); 
+        
+        //$('.bg-6').css('background-image', 'url('+ pathname +'images/photos/schools/calhoun.jpg)');
+        
+        
+        
+        $(".select-linkF").text($(".returns-link").html());
+        $(".faq-link").removeClass("selected").addClass("");
+        $(".returns-link").removeClass("").addClass("selected");
+        $(".m-link-returns").fadeOut();
+        $(".select-linkF").removeClass("").addClass("selected");
+        $(".select-linkF").append("<div style='float: right;'><i class='fas fa-chevron-circle-down'></i></div>");
+        
+        window.history.pushState("","",pathname2);
+        
+    });
+    
+    
+                    
+    
+});
+
+//***********************************************************************
+
+
 
 //Non-Ajax Waypoints**********************************************************
 $(function () {

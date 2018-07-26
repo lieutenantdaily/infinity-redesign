@@ -3,7 +3,7 @@ $(document).ready(function () {
     var isiPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
     var isiPad = navigator.userAgent.toLowerCase().indexOf("ipad");
     var isiPod = navigator.userAgent.toLowerCase().indexOf("ipod");
-    var bgDIVS = $('.block-border-inside, #background-one, #background-section-one, #background-three, #background-four');
+    var bgDIVS = $('.block-border-inside, #background-one, #background-section-one, #background-three, #background-four, #background-five');
 
     if (isiPhone > -1) {
         document.getElementById("viewport").setAttribute("content", "maximum-scale=0.9");
@@ -11,6 +11,8 @@ $(document).ready(function () {
         
         bgDIVS.css('position', 'fixed');
         bgDIVS.css('background-attachment', 'local');
+        $("#section-six").removeClass("bg-6");
+        $("#section-one").removeClass("bg-1");
         //$('#base-text').css('position', 'absolute');
         //$('#base-text').css('bottom', '30px');
         //$('#base-text').css('font-size', '22px');
@@ -21,6 +23,8 @@ $(document).ready(function () {
     if (isiPad > -1) {
         bgDIVS.css('position', 'fixed');
         bgDIVS.css('background-attachment', 'local');
+        $("#section-six").removeClass("bg-6");
+        $("#section-one").removeClass("bg-1");
         //$('#base-text').css('position', 'absolute');
         //$('#base-text').css('bottom', '30px');
         //$('#base-text').css('font-size', '22px');
@@ -31,6 +35,8 @@ $(document).ready(function () {
     if (isiPod > -1) {
         bgDIVS.css('position', 'fixed');
         bgDIVS.css('background-attachment', 'local');
+        $("#section-six").removeClass("bg-6");
+        $("#section-one").removeClass("bg-1");
         //$('#base-text').css('position', 'absolute');
         //$('#base-text').css('bottom', '30px');
         //$('#base-text').css('font-size', '22px');

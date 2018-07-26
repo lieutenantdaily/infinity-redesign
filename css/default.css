@@ -1382,13 +1382,13 @@ background-size: cover;
     background: white;
 }
 #section-six {
-    background: #3a393c;
+    /*background: #3a393c;*/
 }
 #section-two {
     overflow: hidden;
 }
 #section-four {
-    background: #d9ab4f;
+    background-color: rgb(235, 235, 235);
 }
 
 .nav-word-last {
@@ -1433,6 +1433,7 @@ background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 1;
+    pointer-events: none;
 }
 #background-three {
     position: absolute;
@@ -1447,6 +1448,7 @@ background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 1;
+    pointer-events: none;
 }
 #background-four {
     position: absolute;
@@ -1462,6 +1464,7 @@ background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 1;
+    pointer-events: none;
 }
 
 #background-five {
@@ -1478,6 +1481,7 @@ background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 1;
+    pointer-events: none;
 }
 
 
@@ -1632,4 +1636,13 @@ background-size: cover;
 
 #school-linkset-2 {
     display: none;
+}
+
+#faq-fade {
+    opacity: 0.01;
+}
+
+#coupon-header {
+    margin-top: 100px;
+    margin-bottom: -200px;
 }

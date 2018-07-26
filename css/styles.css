@@ -1484,6 +1484,9 @@ clear:both;
     background: rgba(250, 250, 250, .92);
     /*box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);*/
     overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 .picturefinal-mini {
     position: relative;
@@ -1500,6 +1503,9 @@ clear:both;
     /*box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);*/
     overflow: hidden;
     display:none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .spinner {
@@ -3249,7 +3255,7 @@ fieldset > ul > li {
 }
 
 .bg-6 {
-    background: url(../images/photos/schools/uah.jpg);
+    background: url(../images/whitebg.png);
 
 }
 
@@ -3260,6 +3266,7 @@ fieldset > ul > li {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 
 .remove-border {
@@ -3311,10 +3318,15 @@ fieldset > ul > li {
 
 .coupon-content {
     font-size: 40px;
-    margin-right: 50px;
-    margin-left: 50px;
-    max-width: 940px;
     display: inline-block;
+    background-image:url(../images/coupon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75%;
+    max-width: 800px;
+    height: 100%;
+    
 }
 
 .bold-ul {
@@ -3366,6 +3378,11 @@ fieldset > ul > li {
     overflow: hidden;
 }
 
+.mobile-shrinkF {
+    overflow: hidden;
+    height:0;
+}
+
 .clickable {
     
 }
@@ -3384,4 +3401,8 @@ fieldset > ul > li {
 
 .m-linkF {
     font-size: 20px;
+}
+
+.inline-display {
+    display: inline-block;
 }
