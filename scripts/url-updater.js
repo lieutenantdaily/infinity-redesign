@@ -16,9 +16,9 @@ $(document).ready(function () {
         $.fn.menuBorderTopFunction($('.nav-word3'), $('.block3'), $('.block5'), "Title 2", "Three", "2", Ssection2);
         $.fn.menuBorderTopFunction($('.nav-word4'), $('.block5'), $('.block6'), "Title 4", "Four", "4", Ssection3);
         $.fn.menuBorderTopFunction($('.nav-word5'), $('.block6'), $('.block7'), "Title 5", "Five", "5", Ssection4);
-        $.fn.menuBorderTopFunction($('.nav-word6'), $('.block7'), $('#base'), "Title 5", "Contact", "5", Ssection5);
+        $.fn.menuBorderTopFunction($('.nav-word6'), $('.block7'), $('#base'), "Title 5", "Contact", "5", Ssection5); 
     });
-    //******************************************************************************
+    //*******************************************************************************
 
 
     //CODE*****************************************************************************
